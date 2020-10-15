@@ -199,13 +199,53 @@ nav {
 
 /* 1025 to 1540 LAPTOP */
 @media (min-width: 1025px) and (max-width: 1540px) {
-    .header {
-        display: none;
+    /* COVER */
+    .cover-logo {
+        padding-top: 0;
+    }
+    .cover-title {
+        bottom: 20px;
+    }
+    /* PAGE1 */
+    .sum {
+        margin-top: 50px;
+    }
+    /* END-LINE */ 
+    .end-line {
+        margin: 150px auto 0 auto;
+    }
+    /* FOOTER */
+    .footer {
+        margin-left: 10%;
     }
 } 
     /* 768 to 1024 TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
-    
+    /* COVER */
+    .cover-logo {
+        padding-top: 0;
+    }
+    .cover-title {
+        bottom: 20px;
+    }
+    .sort > h3 {
+        font-size: 1.2rem;
+    }
+    .visit > h3 > a {
+        font-size: 1.2rem;
+    }
+    /* PAGE1 */
+    .sum {
+        margin-top: 50px;
+    }
+    /* END-LINE */ 
+    .end-line {
+        margin: 150px auto 0 auto;
+    }
+    /* FOOTER */
+    .footer {
+        margin-left: 10%;
+    }
 }
 /* 0 to 767px MOBILE */
 @media (max-width: 768px) {

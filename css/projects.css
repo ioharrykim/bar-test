@@ -385,13 +385,147 @@ nav {
 
 /* 1025 to 1540 LAPTOP */
 @media (min-width: 1025px) and (max-width: 1540px) {
-    .header {
+    /* TITLE-BAR */
+    .title-bar .title {
+        padding-top: 262px;
+        margin-left: 80px;
+        color: #AAAAAA;
+        font-weight: 500;
+        font-style: italic;
+    }
+    .title-bar p {
         display: none;
+    }
+    /* HANGSUNG */
+    .menus .p1 h1 {
+        margin-left: 80px;
+    }
+    .menus .p1 p {
+        margin-right: 80px;
+    }
+    .menus .p2 h1 {
+        margin-left: 80px;
+    }
+    .menus .p2 p {
+        margin-right: 80px;
+    }
+    .menus .p3 h1 {
+        margin-left: 80px;
+    }
+    .menus .p3 p {
+        margin-right: 80px;
+    }
+    .menus .p4 h1 {
+        margin-left: 80px;
+    }
+    .menus .p4 p {
+        margin-right: 80px;
+    }
+    .menus .p5 h1 {
+        margin-left: 80px;
+    }
+    .menus .p5 p {
+        margin-right: 80px;
+    }
+    .menus .p6 h1 {
+        margin-left: 80px;
+    }
+    .menus .p6 p {
+        margin-right: 80px;
+    }
+    .menus .p7 h1 {
+        margin-left: 80px;
+    }
+    .menus .p7 p {
+        margin-right: 80px;
+    }
+    /* END-LINE */ 
+    .end-line {
+        margin: 150px auto 0 auto;
+    }
+    /* FOOTER */
+    .footer {
+        margin-left: 10%;
     }
 } 
     /* 768 to 1024 TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
-    
+    /* TITLE-BAR */
+    .title-bar .title {
+        padding-top: 262px;
+        margin-left: 80px;
+        color: #AAAAAA;
+        font-weight: 500;
+        font-style: italic;
+    }
+    .title-bar p {
+        display: none;
+    }
+    /* HANGSUNG */
+    .menus .p1 h1 {
+        margin-left: 80px;
+        font-size: 3.5rem;
+    }
+    .menus .p1 p {
+        margin-right: 80px;
+        font-size: 1.5rem;
+    }
+    .menus .p2 h1 {
+        margin-left: 80px;
+        font-size: 3.5rem;
+    }
+    .menus .p2 p {
+        margin-right: 80px;
+        font-size: 1.5rem;
+    }
+    .menus .p3 h1 {
+        margin-left: 80px;
+        font-size: 3.5rem;
+    }
+    .menus .p3 p {
+        margin-right: 80px;
+        font-size: 1.5rem;
+    }
+    .menus .p4 h1 {
+        margin-left: 80px;
+        font-size: 3.5rem;
+    }
+    .menus .p4 p {
+        margin-right: 80px;
+        font-size: 1.5rem;
+    }
+    .menus .p5 h1 {
+        margin-left: 80px;
+        font-size: 3.5rem;
+    }
+    .menus .p5 p {
+        margin-right: 80px;
+        font-size: 1.5rem;
+    }
+    .menus .p6 h1 {
+        margin-left: 80px;
+        font-size: 3.5rem;
+    }
+    .menus .p6 p {
+        margin-right: 80px;
+        font-size: 1.5rem;
+    }
+    .menus .p7 h1 {
+        margin-left: 80px;
+        font-size: 3.5rem;
+    }
+    .menus .p7 p {
+        margin-right: 80px;
+        font-size: 1.5rem;
+    }
+    /* END-LINE */ 
+    .end-line {
+        margin: 150px auto 0 auto;
+    }
+    /* FOOTER */
+    .footer {
+        margin-left: 10%;
+    }
 }
 /* 0 to 767px MOBILE */
 @media (max-width: 768px) {

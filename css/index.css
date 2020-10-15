@@ -152,13 +152,41 @@ nav {
 
 /* 1025 to 1540 LAPTOP */
 @media (min-width: 1025px) and (max-width: 1540px) {
-    .header {
-        display: none;
+    /* TEXT-AREA */
+    .text-area {
+        margin-left: 80px;
+    }
+    .text-area h1 {
+        font-size: 7rem;
+    }
+    .text-area p {
+        margin-top: -1em;
+    }
+    /* FOOTER */
+    .footer {
+        display: flex;
+        margin-left: 80px;
+        padding-top: 300px;
     }
 } 
 /* 768 to 1024 TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
-    
+    /* TEXT-AREA */
+    .text-area {
+        margin-left: 80px;
+    }
+    .text-area h1 {
+        font-size: 7rem;
+    }
+    .text-area p {
+        margin-top: -1em;
+    }
+    /* FOOTER */
+    .footer {
+        display: flex;
+        margin-left: 80px;
+        padding-top: 300px;
+    }
 }
 /* 0 to 767px MOBILE */
 @media (max-width: 768px) {
