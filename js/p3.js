@@ -14,14 +14,14 @@ $(document).ready(function(){
             headerM.css({
                 "color" : "#000"
             });
-            headerL.html("<img src='./images/Logo.png' alt='Logo'>");
+            headerL.html("<img src='./images/logo.png' alt='logo'>");
         }
         if(wScroll >= cover.offset().top && wScroll <= page.offset().top) {
             console.log("아웃");
             headerM.css({
                 "color" : "#DBA731"
             });
-            headerL.html("<img src='./images/Logo_w.png' alt='Logo_w'>");
+            headerL.html("<img src='./images/logo_w.png' alt='logo_w'>");
         }
     });
 
