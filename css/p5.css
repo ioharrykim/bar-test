@@ -36,7 +36,7 @@ html {
     align-items: center;
 }
 .header-wrap img {
-    width: 130px;
+    width: 200px;
 }
 nav {
     display: block;
@@ -54,20 +54,9 @@ nav {
     color: #fff;
 }
 .header-menu-links a:last-child {
-    margin-left: 20px;
+    margin-left: 60px;
 }
 
-/* TITLE-BAR */
-.title-bar .title {
-    padding-top: 262px;
-    margin-left: 203px;
-    color: #AAAAAA;
-    font-weight: 500;
-    font-style: italic;
-}
-.title-bar p {
-    display: none;
-}
 
 /* COVER */
 .cover {
@@ -191,15 +180,18 @@ nav {
 
 .footer {
     display: flex;
-    margin-left: 20px;
+    margin-left: 203px;
     color: #AAAAAA;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 .footer .name h2 {
+    color: #000000;
     font-weight: 600;
     font-size: 48px;
 }
 .footer .contact h2 {
-    margin-left: 90px;
+    margin-left: 77px;
     font-weight: 300;
     font-size: 28px;
 }
@@ -207,64 +199,147 @@ nav {
     margin-top: -30px;
 }
 
-
-@media (min-width: 1024px) {
-
-    /* NAV */
+/* 1025 to 1540 LAPTOP */
+@media (min-width: 1025px) and (max-width: 1540px) {
     .header {
-        position: fixed;
-        width: 100%;
-        z-index: 10;
-        padding-top: 10px;
+        display: none;
+    }
+} 
+/* 768 to 1024 TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+/* 0 to 767px MOBILE */
+@media (max-width: 768px) {
+    .header-wrap img {
+        width: 150px;
     }
     .header-container {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    .header-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header-wrap img {
-        width: 200px;
-    }
-    nav {
-        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .header-menu-links {
         display: flex;
-        flex-direction: row;
-        font-size: 1rem;
+        flex-direction: column;
+        font-size: 0.9rem;
         font-weight: 300;
+        text-align: right;
+        margin-top: 10px;
     }
     .header-menu-links a:last-child {
-        margin-left: 60px;
+        margin-left: 0;
     }
-   
-    /* FOOTER */
+
+    /* COVER */
+    .loading-title {
+        display: none;
+        color: #277043;
+        text-align: center;
+        align-items: center;
+        font-size: 1.4rem;
+        line-height: 100vh;
+    }
+    .cover-logo {
+        padding-top: 25vh;
+    }
+    .cover-logo img {
+        width: 100%;
+    }
+    .cover-title {
+        bottom: 50px;
+    }
+    .sort > h3 {
+        font-weight: 300;
+        font-size: 1rem;
+        color: #277043;
+    }
+    .visit > h3 > a {
+        font-weight: 300;
+        font-size: 1rem;
+        color: #277043;
+    }
+    /* PAGE1 */
+    .page1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .page1 img {
+        width: 100%;
+    }
+    .image-1 {
+        margin-top: 50px;
+        text-align: right;
+    }
+    .image-2 {
+        text-align: right;
+        margin-top: 50px;
+    }
+    .sum-area {
+        width: 90%;
+        padding: 50px 20px 0px 20px;
+    }
+    .sum-title h2 {
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+    .sum-title h2 span {
+        margin-left: 20px;
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #AAAAAA;
+    }
+    .sum-title h3 {
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #AAAAAA;
+    }
+    .sum-line {
+        display: block;
+        background-color: #000000;
+        width: 80vw;
+        height: 2px;
+        margin: 5px 0;
+    }
+    .sum {
+        margin-top: 10px;
+    }
+    .sum p {
+        font-size: 0.9rem;
+    }
+    .sum p span {
+        font-size: 0.7rem;
+        color: #AAAAAA;
+    }
+    /* END-LINE */
+    .line-container {
+        width: 100%;
+    }
+    .end-line {
+        display: block;
+        text-align: center;
+        margin: 100px auto 0 auto;
+        width: 80vw;
+        height: 2px;
+        background-color: #000000;
+    }
     .footer {
         display: flex;
-        margin-left: 203px;
+        margin: 0 20px;
         color: #AAAAAA;
-        margin-top: 90px;
-        margin-bottom: 90px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        justify-content: space-between;
     }
     .footer .name h2 {
         color: #000000;
         font-weight: 600;
-        font-size: 48px;
+        font-size: 1.6rem;
+        line-height: 1.2;
     }
     .footer .contact h2 {
-        margin-left: 77px;
+        margin-left: 20px;
         font-weight: 300;
-        font-size: 28px;
+        font-size: 0.9rem;
     }
-    .footer .contact h2:last-child {
-        margin-top: -30px;
-    }
-}
+} 
+

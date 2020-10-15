@@ -46,3 +46,4 @@ a {
 	color: #000;
 	text-decoration: none;
 }
+body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
