@@ -152,6 +152,9 @@ nav {
     justify-content: space-between;
     margin-top: 200px;
 }
+.image-5 img {
+    margin-right: 30px;
+}
 .image-5:first-child {
     display: block;
 }
