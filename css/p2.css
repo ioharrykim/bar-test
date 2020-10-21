@@ -329,7 +329,7 @@ nav {
         display: block;
     }
     .image-5 img {
-        display: none;
+        width: 100%;
     }
     .sum-area {
         width: 35em;
@@ -430,8 +430,11 @@ nav {
         text-align: center;
         padding-top: 100px;
     }
+    .image-5 {
+        display: block;
+    }
     .image-5 img {
-        display: none;
+        width: 100%;
     }
     .sum-area {
         width: 90%;
