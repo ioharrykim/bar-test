@@ -296,6 +296,11 @@ nav {
         width: 100%;
         margin: 50px 0;
     }
+    .p1t {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
     .image-1 {
         display: block;
         text-align: center;
@@ -305,6 +310,19 @@ nav {
         display: block;
         text-align: center;
         padding-top: 100px;
+    }
+    .image-3 {
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .image-4 {
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .image-5 {
+        display: block;
     }
     .image-5 img {
         display: none;
@@ -383,12 +401,27 @@ nav {
         width: 100%;
         margin: 50px 0;
     }
+    .p1t {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0.7rem;
+    }
     .image-1 {
         display: block;
         text-align: center;
         padding-top: 100px;
     }
     .image-2 {
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .image-3 {
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .image-4 {
         display: block;
         text-align: center;
         padding-top: 100px;
