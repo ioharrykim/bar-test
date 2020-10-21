@@ -46,37 +46,37 @@ $(document).ready(function(){
     function delayLink1() {
         setTimeout(function(){
             location.href = "./p1.html";
-        },1500);
+        },1000);
     }
     function delayLink2() {
         setTimeout(function(){
             location.href = "./p2.html";
-        },1500);
+        },1000);
     }
     function delayLink3() {
         setTimeout(function(){
             location.href = "./p3.html";
-        },1500);
+        },1000);
     }
     function delayLink4() {
         setTimeout(function(){
             location.href = "./p4.html";
-        },1500);
+        },1000);
     }
     function delayLink5() {
         setTimeout(function(){
             location.href = "./p5.html";
-        },1500);
+        },1000);
     }
     function delayLink6() {
         setTimeout(function(){
             location.href = "./p6.html";
-        },1500);
+        },1000);
     }
     function delayLink7() {
         setTimeout(function(){
             location.href = "./p7.html";
-        },1500);
+        },1000);
     }
     $(".p1").click(function(event){
         event.preventDefault();
@@ -164,8 +164,6 @@ $(document).ready(function(){
         $(".loading-title").fadeOut(1000);
         coverFadeIn();
     }
-    
-
     titleFadeToggle();
     
     

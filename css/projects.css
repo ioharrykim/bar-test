@@ -71,7 +71,6 @@ nav {
 .menus .p1 {
     display: flex;
     align-items: center;
-    margin-top: 100px;
 }
 .menus .p1 .l1 {
     width: 70vw;
@@ -158,6 +157,7 @@ nav {
 .menus .p4 {
     display: flex;
     align-items: center;
+    margin-top: 100px;
 }
 .menus .p4 .l4 {
     width: 70vw;
@@ -212,7 +212,7 @@ nav {
     color: #277043;
 }
 
-    /* CHAMPIONS PASSPORT */
+    /* STUDIO DRAGON */
 .menus .p6 {
     display: flex;
     align-items: center;
@@ -237,8 +237,8 @@ nav {
     margin-right: 203px;
 }
 .menus .p6:hover {
-    background-color: #E6B228;
-    color: #ffffff;
+    background-color: #212322;
+    color: #A6192E;
 }
 
     /* ARTWORKS */
@@ -343,7 +343,7 @@ nav {
     font-size: 0;
     bottom: 0;
     left: 0;
-    background-color: #E6B228;
+    background-color: #212322;
     width: 100%;
     height: 1vh;
 }
@@ -561,7 +561,6 @@ nav {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        margin-top: 100px;
     }
     .menus .p1 .l1 {
         margin-left: 20px;
@@ -641,6 +640,7 @@ nav {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        margin-top: 100px;
     }
     .menus .p4 .l4 {
         margin-left: 20px;
@@ -688,7 +688,7 @@ nav {
         background-color: #DADADA;
         color: #277043;
     }
-    /* CHAMPIONS PASSPORT */
+    /* STUDIO DRAGON */
     .menus .p6 {
         display: flex;
         flex-wrap: wrap;
@@ -696,7 +696,7 @@ nav {
         justify-content: space-between;
     }
     .menus .p6 .l6 {
-        width: 42vw;
+        width: 58vw;
         margin-left: 20px;
         margin-right: 20px;
     }

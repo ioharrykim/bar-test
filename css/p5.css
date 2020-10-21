@@ -237,6 +237,23 @@ nav {
         font-size: 1.2rem;
     }
     /* PAGE1 */
+    .page1 {
+        width: 100%;
+    }
+    .page1 img {
+        width: 100%;
+        margin: 50px 0;
+    }
+    .image-1 {
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .image-2 {
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+    }
     .sum {
         margin-top: 50px;
     }
@@ -305,14 +322,15 @@ nav {
     }
     .page1 img {
         width: 100%;
+        margin: 50px 0;
     }
     .image-1 {
-        margin-top: 50px;
-        text-align: right;
+        text-align: center;
+        padding-top: 100px;
     }
     .image-2 {
-        text-align: right;
-        margin-top: 50px;
+        text-align: center;
+        padding-top: 100px;
     }
     .sum-area {
         width: 90%;
