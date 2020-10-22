@@ -64,39 +64,6 @@ $(".images-container").mouseout(function(){
         $('.follow').css({'top': e.clientY - 20, 'left': e.clientX - 20});
     });
 
-    var $imagesArea = $(".images-area");
-    $imagesArea.css({
-        "transform" : "translateY(-3000px)",
-        "transition" : "all 15s linear"
-    });
-
-    // $imagesArea.click(function(){
-        
-    // });
-
-    $(".i1").hover(function() {
-        $(this).find("img:last").fadeToggle();
-    });
-
-    $(".i2").hover(function() {
-        $(this).find("img:last").fadeToggle();
-    });
-
-    $(".i3").hover(function() {
-        $(this).find("img:last").fadeToggle();
-    });
-
-    $(".i4").hover(function() {
-        $(this).find("img:last").fadeToggle();
-    });
-
-    $(".i5").hover(function() {
-        $(this).find("img:last").fadeToggle();
-    });
-
-    $(".i6").hover(function() {
-        $(this).find("img:last").fadeToggle();
-    });
 
 /* 로딩 */
     function delayLink1() {
@@ -140,7 +107,7 @@ $(".images-container").mouseout(function(){
         $(".p1-loading").css({
             "opacity" : "100",
             "transform" : "scaleY(200)",
-            "transition" : "all ease 1s"
+            "transition" : "all ease-out 1s"
         });
         delayLink1();
     });
@@ -150,17 +117,28 @@ $(".images-container").mouseout(function(){
         $(".p2-loading").css({
             "opacity" : "100",
             "transform" : "scaleY(200)",
-            "transition" : "all ease 1s"
+            "transition" : "all ease-out 1s"
         });
         delayLink2();
     });
+    // $(".p2").click(function(event){
+    //     event.preventDefault();
+    //     $(".header").fadeOut(500);
+    //     $(".wave-container").css({
+    //         "opacity" : "100",
+    //         "transform" : "translateY(2000)",
+    //         "transform" : "scaleY(2000)",
+    //         "transition" : "all ease-out 1s"
+    //     });
+    //     delayLink2();
+    // });
     $(".p3").click(function(event){
         event.preventDefault();
         $(".header").fadeOut(500);
         $(".p3-loading").css({
             "opacity" : "100",
             "transform" : "scaleY(200)",
-            "transition" : "all ease 1s"
+            "transition" : "all ease-out 1s"
         });
         delayLink3();
     });
@@ -170,7 +148,7 @@ $(".images-container").mouseout(function(){
         $(".p4-loading").css({
             "opacity" : "100",
             "transform" : "scaleY(200)",
-            "transition" : "all ease 1s"
+            "transition" : "all ease-out 1s"
         });
         delayLink4();
     });
@@ -180,7 +158,7 @@ $(".images-container").mouseout(function(){
         $(".p5-loading").css({
             "opacity" : "100",
             "transform" : "scaleY(200)",
-            "transition" : "all ease 1s"
+            "transition" : "all ease-out 1s"
         });
         delayLink5();
     });
@@ -190,7 +168,7 @@ $(".images-container").mouseout(function(){
         $(".p6-loading").css({
             "opacity" : "100",
             "transform" : "scaleY(200)",
-            "transition" : "all ease 1s"
+            "transition" : "all ease-out 1s"
         });
         delayLink6();
     });
@@ -200,7 +178,7 @@ $(".images-container").mouseout(function(){
         $(".p7-loading").css({
             "opacity" : "100",
             "transform" : "scaleY(200)",
-            "transition" : "all ease 1s"
+            "transition" : "all ease-out 1s"
         });
         delayLink7();
     });
