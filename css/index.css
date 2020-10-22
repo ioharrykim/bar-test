@@ -18,7 +18,7 @@ html {
 .header {
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 9000;
     padding-top: 10px;
 }
 .header-container {
@@ -58,7 +58,7 @@ nav {
 .text-area {
     position: relative;
     top: 30vh;
-    z-index: 10;
+    z-index: 9000;
     margin-left: 150px;
 }
 .text-area h1 {
@@ -75,67 +75,117 @@ nav {
     line-height: 1.6;
 }
 
+/* IMAGES CONTAINER */
 
-/* IMAGES-AREA */
-.images-area {
-    display: block;
+.images-container {
+    opacity: 0;
 }
-.images-area .i1 img {
+@keyframes goDown {
+    from {
+        top:2000px;
+    }
+    to {
+        top:-2000px;
+    } 
+}
+.images2 {
+    position:absolute;
+    top: 0;
+    right: 650px;
+    animation-name:goDown;
+    animation-timing-function:linear;
+    animation-direction: normal;
+    animation-duration:11s;
+    animation-iteration-count:infinite;
+}
+.images2 > div {
+    cursor: pointer;
+    margin: 163px 0;
+}
+.images2-1 {
+    position:absolute;
+    top: -2000px;
+    right: 650px;
+    animation-name:goDown;
+    animation-timing-function:linear;
+    animation-direction: normal;
+    animation-delay: 5.5s;
+    animation-duration:11s;
+    animation-iteration-count:infinite;
+}
+.images2-1 > div {
+    cursor: pointer;
+    margin: 163px 0;
+}
+@keyframes goUp {
+    from {
+        top:-2000px;
+    }
+    to {
+        top:2000px;
+    } 
+}
+.images1 {
+    position:absolute;
+    top: 0;
+    right: 150px;
+    animation-name:goUp;
+    animation-timing-function:linear;
+    animation-direction: normal;
+    animation-duration:11s;
+    animation-iteration-count:infinite;
+}
+.images1 > div {
+    cursor: pointer;
+    margin: 163px 0;
+}
+.images1-1 {
+    position:absolute;
+    top: -2000px;
+    right: 150px;
+    animation-name:goUp;
+    animation-timing-function:linear;
+    animation-direction: normal;
+    animation-delay: 5.5s;
+    animation-duration:11s;
+    animation-iteration-count:infinite;
+}
+.images1-1 > div {
+    cursor: pointer;
+    margin: 163px 0;
+}
+
+/* LOADING */
+.index-loading {
+    background-color: #fff;
     position: absolute;
-    top: 100px;
-    right: 705px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(1);
+    height: 100vh;
+    z-index: 9999;
+    opacity: 100;
 }
-.images-area .i1 img:last-child {
-    display: none;
+.index-loading h1 {
+    font-family: turbinado-pro, sans-serif;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 100vh;
 }
-.images-area .i2 img {
-    position: absolute;
-    top: 700px;
-    right: 705px;
-}
-.images-area .i2 img:last-child {
-    display: none;
-}
-.images-area .i3 img {
-    position: absolute;
-    top: 1300px;
-    right: 705px;
-}
-.images-area .i3 img:last-child {
-    display: none;
-}
-.images-area .i4 img {
-    position: absolute;
-    top: -150px;
-    right: 209px;
-}
-.images-area .i4 img:last-child {
-    display: none;
-}
-.images-area .i5 img {
-    position: absolute;
-    top: 450px;
-    right: 209px;
-}
-.images-area .i5 img:last-child {
-    display: none;
-}
-.images-area .i6 img {
-    position: absolute;
-    top: 1050px;
-    right: 209px;
-}
-.images-area .i6 img:last-child {
-    display: none;
+.index-loading h1 span {
+    color: #f0d738;
 }
 
 /* FOOTER */
 .footer {
+    position: relative;
     display: flex;
     margin-left: 150px;
     padding-top: 500px;
     color: #AAAAAA;
-    z-index: 100;
+    z-index: 1000;
 }
 .footer .name h2 {
     font-weight: 600;
@@ -161,16 +211,29 @@ nav {
     }
     .text-area p {
         margin-top: -1em;
+        margin-bottom: 30px;
     }
     /* FOOTER */
     .footer {
         display: flex;
         margin-left: 80px;
-        padding-top: 300px;
     }
 } 
 /* 768 to 1024 TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
+    /* IMAGE-CONTAINERS */
+    .images1 {
+        right: 0;
+    }
+    .images1-1 {
+        right: 0;
+    }
+    .images2 {
+        right: 450px;
+    }
+    .images2-1 {
+        right: 450px;
+    }
     /* TEXT-AREA */
     .text-area {
         margin-left: 80px;
@@ -180,12 +243,20 @@ nav {
     }
     .text-area p {
         margin-top: -1em;
+        margin-bottom: 30px;
+    }
+    /* LOADING */
+    .index-loading h1 {
+        font-family: turbinado-pro, sans-serif;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        text-align: center;
+        line-height: 100vh;
     }
     /* FOOTER */
     .footer {
         display: flex;
         margin-left: 80px;
-        padding-top: 300px;
     }
 }
 /* 0 to 767px MOBILE */
@@ -221,11 +292,35 @@ nav {
         font-size: 0.9rem;
         margin-top: 0;
         line-height: 2;
+        margin-bottom: 30px;
     }
 
-    /* IMAGES-AREA */
-    .images-area img {
-        display: none;
+    /* IMAGE-CONTAINERS */
+    .images-container {
+        width: 100%;
+    }
+    .images-container img {
+        width: 180px;
+    }
+    .images1 {
+        right: 0;
+    }
+    .images1-1 {
+        right: 0;
+    }
+    .images2 {
+        right: 200px;
+    }
+    .images2-1 {
+        right: 200px;
+    }
+    /* LOADING */
+    .index-loading h1 {
+        font-family: turbinado-pro, sans-serif;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        text-align: center;
+        line-height: 100vh;
     }
 
     /* FOOTER */

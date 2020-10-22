@@ -2,6 +2,62 @@
 $(document).ready(function(){
 // READY 
 
+/* 로딩 */
+$(".index-loading").css({
+    "transform" : "translateX(0)",
+    "transition" : "all 1s ease 4s",
+    "opacity" : "0"
+});
+setTimeout(function(){
+    $(".index-loading").remove();
+},5000);
+
+
+/* WELCOME */
+setTimeout(function(){
+    $(".text-area").fadeIn();
+},5000);
+
+/* 이미지 이동 */ 
+setTimeout(function(){
+    $(".images-container").css({
+        "opacity" : "1",
+        "transition" : "all 1 ease"
+    });
+},4000);
+// function imageOpa() {
+
+// }
+$(".images-container").mouseover(function(){
+    $(".images1").css({
+        "animation-play-state" : "paused"
+    });
+    $(".images1-1").css({
+        "animation-play-state" : "paused"
+    });
+    $(".images2").css({
+        "animation-play-state" : "paused"
+    });
+    $(".images2-1").css({
+        "animation-play-state" : "paused"
+    });
+});
+$(".images-container").mouseout(function(){
+    $(".images1").css({
+        "animation-play-state" : "running"
+    });
+    $(".images1-1").css({
+        "animation-play-state" : "running"
+    });
+    $(".images2").css({
+        "animation-play-state" : "running"
+    });
+    $(".images2-1").css({
+        "animation-play-state" : "running"
+    });
+});
+
+
 /* 이미지 */
 
     $("#sketch").mousemove(function(e){
